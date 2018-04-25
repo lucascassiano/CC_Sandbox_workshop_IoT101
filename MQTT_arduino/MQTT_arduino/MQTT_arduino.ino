@@ -47,7 +47,7 @@ void connect() {
   }
 
   Serial.println("connected!");
-
+  
   client.subscribe("collective");
 
 }
@@ -61,7 +61,7 @@ void loop() {
     connect();
   }
 
-  client.publish("/hello", "world");
+  client.publish("sandbox", "world");
   
 }
 
